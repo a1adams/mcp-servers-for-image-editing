@@ -1,0 +1,340 @@
+{
+  "keyword": "mcp server for image editing",
+  "title": "MCP Server for Image Editing: 8 Servers Claude Can Drive, Compared",
+  "lastChecked": "2026-10-15",
+  "capabilityChecks": [
+    {
+      "key": "hostedServer",
+      "label": "Hosted server"
+    },
+    {
+      "key": "layersOrMasks",
+      "label": "Layers or masks"
+    },
+    {
+      "key": "textEdits",
+      "label": "Text edits"
+    },
+    {
+      "key": "exportOrRender",
+      "label": "Export or render"
+    },
+    {
+      "key": "firstPartyServer",
+      "label": "First-party server"
+    },
+    {
+      "key": "openSourceLicence",
+      "label": "Open-source licence"
+    },
+    {
+      "key": "runsWithNoDesktopAppOpen",
+      "label": "Runs with no desktop app open"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for edits you rerun without a desktop app",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Custom connector, hosted MCP, OAuth sign-in",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Add the Wireflow connector to Claude Code, from the wireflowINC/skills README. Then run /mcp to sign in.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        },
+        {
+          "label": "Or run a saved workflow from code: send its input values to this endpoint with an API key, then poll the execution. The request format is in the API reference linked under Docs.",
+          "lang": "text",
+          "code": "POST /api/v1/workflows/{id}/run"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/node-based-image-generation",
+      "moneyPageLabel": "Wireflow node based image generation page",
+      "capabilities": {
+        "hostedServer": true,
+        "layersOrMasks": true,
+        "textEdits": true,
+        "exportOrRender": true,
+        "firstPartyServer": true,
+        "openSourceLicence": null,
+        "runsWithNoDesktopAppOpen": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Adobe for Claude",
+      "tagline": "Best for photo fixes with Adobe tools inside a chat",
+      "homepage": "https://www.adobe.com/adobe-connectors/adobe-for-claude.html",
+      "docs": "https://claude.com/marketplace/connectors/adobe-creativity",
+      "pricing": null,
+      "claudeConnection": "Directory connector, hosted MCP, sign-in required",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "Free tier is marked yes because Adobe says many tools work without signing in. Adobe states no price for the connector, so no pricing link is listed.",
+      "quickstart": [
+        {
+          "label": "Connector URL from Anthropic's directory listing. Adobe's page says to add the Adobe plugin from Plugins in Claude, connect it on the Connectors tab, then type /adobe in a new conversation.",
+          "lang": "text",
+          "code": "https://adobe-creativity.adobe.io/mcp"
+        }
+      ],
+      "capabilities": {
+        "hostedServer": true,
+        "layersOrMasks": null,
+        "textEdits": true,
+        "exportOrRender": true,
+        "firstPartyServer": true,
+        "openSourceLicence": null,
+        "runsWithNoDesktopAppOpen": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 3,
+      "name": "ImageMagick MCP",
+      "tagline": "Best for scripted resize, crop and overlay work",
+      "homepage": "https://github.com/bthurlow/imagemagick-mcp",
+      "docs": null,
+      "pricing": null,
+      "claudeConnection": "Local server run with node, needs ImageMagick 7+",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "bthurlow/imagemagick-mcp",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Build from source, then add it to Claude Code, from the ImageMagick MCP README. Replace the path with your own.",
+          "lang": "bash",
+          "code": "git clone https://github.com/bthurlow/imagemagick-mcp.git\ncd imagemagick-mcp\nyarn install\nyarn build\nclaude mcp add imagemagick -- node /path/to/imagemagick-mcp/dist/index.js"
+        }
+      ],
+      "capabilities": {
+        "hostedServer": false,
+        "layersOrMasks": true,
+        "textEdits": true,
+        "exportOrRender": true,
+        "firstPartyServer": null,
+        "openSourceLicence": true,
+        "runsWithNoDesktopAppOpen": true
+      },
+      "live": {
+        "stars": 3,
+        "lastPush": "2026-04-14T23:18:14Z",
+        "latestRelease": "v0.1.4",
+        "latestReleaseDate": "2026-04-14",
+        "checkedAt": "2026-10-15"
+      }
+    },
+    {
+      "n": 4,
+      "name": "Photoshop MCP",
+      "tagline": "Best for layered edits in a copy of the app you already own",
+      "homepage": "https://github.com/alisaitteke/photoshop-mcp",
+      "docs": "https://github.com/alisaitteke/photoshop-mcp/blob/master/docs/available-tools.md",
+      "pricing": null,
+      "claudeConnection": "Local server through npx, needs Photoshop running",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "alisaitteke/photoshop-mcp",
+      "note": "Free tier is marked yes for the server only, which requires your own Photoshop.",
+      "quickstart": [
+        {
+          "label": "Add it to Claude Code, from the Photoshop MCP README. Photoshop must be running, with Node.js 18 or later installed.",
+          "lang": "bash",
+          "code": "claude mcp add photoshop -- npx -y @alisaitteke/photoshop-mcp"
+        }
+      ],
+      "capabilities": {
+        "hostedServer": false,
+        "layersOrMasks": true,
+        "textEdits": true,
+        "exportOrRender": true,
+        "firstPartyServer": false,
+        "openSourceLicence": true,
+        "runsWithNoDesktopAppOpen": false
+      },
+      "live": {
+        "stars": 645,
+        "lastPush": "2026-10-14T02:11:58Z",
+        "latestRelease": "v1.7.34",
+        "latestReleaseDate": "2026-10-08",
+        "checkedAt": "2026-10-15"
+      }
+    },
+    {
+      "n": 5,
+      "name": "GIMP MCP",
+      "tagline": "Best for free desktop edits with a preview the model can check",
+      "homepage": "https://github.com/maorcc/gimp-mcp",
+      "docs": null,
+      "pricing": null,
+      "claudeConnection": "Local server through uv, needs GIMP 3.2+ running",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "maorcc/gimp-mcp",
+      "note": "It has no tagged GitHub release, so the data table shows the date of the last push.",
+      "quickstart": [
+        {
+          "label": "Add it to Claude Code, from the GIMP MCP README. Replace the path with your own. First copy the plugin into GIMP, open an image and start the server from Tools, MCP, Start MCP Server.",
+          "lang": "bash",
+          "code": "claude mcp add gimp-mcp -- uv run --directory /full/path/to/gimp-mcp gimp_mcp_server.py"
+        }
+      ],
+      "capabilities": {
+        "hostedServer": false,
+        "layersOrMasks": true,
+        "textEdits": true,
+        "exportOrRender": true,
+        "firstPartyServer": null,
+        "openSourceLicence": true,
+        "runsWithNoDesktopAppOpen": false
+      },
+      "live": {
+        "stars": 260,
+        "lastPush": "2026-05-29T20:59:16Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-15"
+      }
+    },
+    {
+      "n": 6,
+      "name": "Krita MCP",
+      "tagline": "Best for painting and layer work in an open document",
+      "homepage": "https://github.com/SanSaSane/krita-mcp",
+      "docs": null,
+      "pricing": null,
+      "claudeConnection": "Local Python server plus a Krita plugin, needs Krita 5.2+ running",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "SanSaSane/krita-mcp",
+      "note": "It has no tagged GitHub release, so the data table shows the date of the last push.",
+      "quickstart": [
+        {
+          "label": "Add it to Claude Code, from the Krita MCP README. Replace the path with your own. Install the Krita plugin first, and keep Krita running.",
+          "lang": "bash",
+          "code": "claude mcp add krita -- python /absolute/path/to/mcp_server.py"
+        }
+      ],
+      "capabilities": {
+        "hostedServer": false,
+        "layersOrMasks": true,
+        "textEdits": true,
+        "exportOrRender": true,
+        "firstPartyServer": null,
+        "openSourceLicence": true,
+        "runsWithNoDesktopAppOpen": false
+      },
+      "live": {
+        "stars": 7,
+        "lastPush": "2026-09-25T08:40:58Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-15"
+      }
+    },
+    {
+      "n": 7,
+      "name": "Figma",
+      "tagline": "Best for changes to design files",
+      "homepage": "https://www.figma.com/",
+      "docs": "https://developers.figma.com/docs/figma-mcp-server/",
+      "pricing": "https://www.figma.com/pricing",
+      "claudeConnection": "Hosted MCP, OAuth sign-in, clients in Figma's MCP Catalog only",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": "figma/mcp-server-guide",
+      "note": "The linked repository is Figma's setup guide for the MCP server, not server code.",
+      "quickstart": [
+        {
+          "label": "Add the remote server to Claude Code, from Figma's remote server setup page.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http figma https://mcp.figma.com/mcp"
+        }
+      ],
+      "capabilities": {
+        "hostedServer": true,
+        "layersOrMasks": true,
+        "textEdits": true,
+        "exportOrRender": true,
+        "firstPartyServer": true,
+        "openSourceLicence": null,
+        "runsWithNoDesktopAppOpen": true
+      },
+      "live": {
+        "stars": 2074,
+        "lastPush": "2026-10-14T08:45:59Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-15"
+      }
+    },
+    {
+      "n": 8,
+      "name": "Canva",
+      "tagline": "Best for finding, generating and exporting designs",
+      "homepage": "https://www.canva.com/",
+      "docs": "https://claude.com/marketplace/connectors/canva",
+      "pricing": "https://www.canva.com/pricing/",
+      "claudeConnection": "Directory connector, hosted MCP, sign-in required",
+      "restApi": true,
+      "modelSupport": null,
+      "freeTier": "yes",
+      "repo": null,
+      "note": "The REST API column refers to Canva's Connect APIs for developers, which Canva documents apart from the connector.",
+      "quickstart": [
+        {
+          "label": "Connector URL from Anthropic's directory listing. Add it from the directory in Claude.",
+          "lang": "text",
+          "code": "https://mcp.canva.com/mcp"
+        }
+      ],
+      "capabilities": {
+        "hostedServer": true,
+        "layersOrMasks": null,
+        "textEdits": null,
+        "exportOrRender": true,
+        "firstPartyServer": true,
+        "openSourceLicence": null,
+        "runsWithNoDesktopAppOpen": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
