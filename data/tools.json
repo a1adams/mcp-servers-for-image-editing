@@ -1,7 +1,7 @@
 {
   "keyword": "mcp server for image editing",
   "title": "MCP Server for Image Editing: 8 Servers Claude Can Drive, Compared",
-  "lastChecked": "2026-10-15",
+  "lastChecked": "2026-10-19",
   "capabilityChecks": [
     {
       "key": "hostedServer",
@@ -148,7 +148,7 @@
         "lastPush": "2026-04-14T23:18:14Z",
         "latestRelease": "v0.1.4",
         "latestReleaseDate": "2026-04-14",
-        "checkedAt": "2026-10-15"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -181,11 +181,11 @@
         "runsWithNoDesktopAppOpen": false
       },
       "live": {
-        "stars": 645,
-        "lastPush": "2026-10-14T02:11:58Z",
-        "latestRelease": "v1.7.34",
-        "latestReleaseDate": "2026-10-08",
-        "checkedAt": "2026-10-15"
+        "stars": 684,
+        "lastPush": "2026-10-17T02:01:18Z",
+        "latestRelease": "v1.7.37",
+        "latestReleaseDate": "2026-10-15",
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -218,11 +218,11 @@
         "runsWithNoDesktopAppOpen": false
       },
       "live": {
-        "stars": 260,
+        "stars": 268,
         "lastPush": "2026-05-29T20:59:16Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-15"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -255,11 +255,11 @@
         "runsWithNoDesktopAppOpen": false
       },
       "live": {
-        "stars": 7,
+        "stars": 10,
         "lastPush": "2026-09-25T08:40:58Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-15"
+        "checkedAt": "2026-10-19"
       }
     },
     {
@@ -292,11 +292,11 @@
         "runsWithNoDesktopAppOpen": true
       },
       "live": {
-        "stars": 2074,
-        "lastPush": "2026-10-14T08:45:59Z",
+        "stars": 2089,
+        "lastPush": "2026-10-19T12:15:21Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-15"
+        "checkedAt": "2026-10-19"
       }
     },
     {

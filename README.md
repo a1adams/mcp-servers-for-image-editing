@@ -16,7 +16,7 @@ We build Wireflow, so read entry 1 as the maker's own view. [Wireflow's node-bas
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-15** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-19** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -52,10 +52,10 @@ One row per tool, one column per thing people actually check before committing. 
 | **[Wireflow](#1-wireflow)** | Custom connector, hosted MCP, OAuth sign-in | Yes | [check](https://www.wireflow.ai/pricing) | [pricing](https://www.wireflow.ai/pricing) | n/a |
 | **[Adobe for Claude](#2-adobe-for-claude)** | Directory connector, hosted MCP, sign-in required | n/a | Yes | n/a | n/a |
 | **[ImageMagick MCP](#3-imagemagick-mcp)** | Local server run with node, needs ImageMagick 7+ | n/a | Yes | n/a | [bthurlow/imagemagick-mcp](https://github.com/bthurlow/imagemagick-mcp), 3 ★, v0.1.4 |
-| **[Photoshop MCP](#4-photoshop-mcp)** | Local server through npx, needs Photoshop running | n/a | Yes | n/a | [alisaitteke/photoshop-mcp](https://github.com/alisaitteke/photoshop-mcp), 645 ★, v1.7.34 |
-| **[GIMP MCP](#5-gimp-mcp)** | Local server through uv, needs GIMP 3.2+ running | n/a | Yes | n/a | [maorcc/gimp-mcp](https://github.com/maorcc/gimp-mcp), 260 ★, pushed 2026-05-29 |
-| **[Krita MCP](#6-krita-mcp)** | Local Python server plus a Krita plugin, needs Krita 5.2+ running | n/a | Yes | n/a | [SanSaSane/krita-mcp](https://github.com/SanSaSane/krita-mcp), 7 ★, pushed 2026-09-25 |
-| **[Figma](#7-figma)** | Hosted MCP, OAuth sign-in, clients in Figma's MCP Catalog only | n/a | Yes | [pricing](https://www.figma.com/pricing) | [figma/mcp-server-guide](https://github.com/figma/mcp-server-guide), 2,074 ★, pushed 2026-10-14 |
+| **[Photoshop MCP](#4-photoshop-mcp)** | Local server through npx, needs Photoshop running | n/a | Yes | n/a | [alisaitteke/photoshop-mcp](https://github.com/alisaitteke/photoshop-mcp), 684 ★, v1.7.37 |
+| **[GIMP MCP](#5-gimp-mcp)** | Local server through uv, needs GIMP 3.2+ running | n/a | Yes | n/a | [maorcc/gimp-mcp](https://github.com/maorcc/gimp-mcp), 268 ★, pushed 2026-05-29 |
+| **[Krita MCP](#6-krita-mcp)** | Local Python server plus a Krita plugin, needs Krita 5.2+ running | n/a | Yes | n/a | [SanSaSane/krita-mcp](https://github.com/SanSaSane/krita-mcp), 10 ★, pushed 2026-09-25 |
+| **[Figma](#7-figma)** | Hosted MCP, OAuth sign-in, clients in Figma's MCP Catalog only | n/a | Yes | [pricing](https://www.figma.com/pricing) | [figma/mcp-server-guide](https://github.com/figma/mcp-server-guide), 2,089 ★, pushed 2026-10-19 |
 | **[Canva](#8-canva)** | Directory connector, hosted MCP, sign-in required | Yes | Yes | [pricing](https://www.canva.com/pricing/) | n/a |
 <!-- DATA-TABLE:END -->
 
