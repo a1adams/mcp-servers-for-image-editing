@@ -1,7 +1,7 @@
 {
   "keyword": "mcp server for image editing",
   "title": "MCP Server for Image Editing: 8 Servers Claude Can Drive, Compared",
-  "lastChecked": "2026-11-02",
+  "lastChecked": "2026-11-09",
   "capabilityChecks": [
     {
       "key": "hostedServer",
@@ -148,7 +148,7 @@
         "lastPush": "2026-04-14T23:18:14Z",
         "latestRelease": "v0.1.4",
         "latestReleaseDate": "2026-04-14",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -181,11 +181,11 @@
         "runsWithNoDesktopAppOpen": false
       },
       "live": {
-        "stars": 788,
-        "lastPush": "2026-11-01T04:01:37Z",
+        "stars": 826,
+        "lastPush": "2026-11-06T14:45:30Z",
         "latestRelease": "v1.7.37",
         "latestReleaseDate": "2026-10-15",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -218,11 +218,11 @@
         "runsWithNoDesktopAppOpen": false
       },
       "live": {
-        "stars": 285,
-        "lastPush": "2026-11-01T19:53:44Z",
+        "stars": 289,
+        "lastPush": "2026-11-08T18:48:50Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -255,11 +255,11 @@
         "runsWithNoDesktopAppOpen": false
       },
       "live": {
-        "stars": 11,
+        "stars": 12,
         "lastPush": "2026-10-23T18:12:43Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -292,11 +292,11 @@
         "runsWithNoDesktopAppOpen": true
       },
       "live": {
-        "stars": 2144,
-        "lastPush": "2026-10-28T14:18:10Z",
+        "stars": 2166,
+        "lastPush": "2026-11-09T11:31:38Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
